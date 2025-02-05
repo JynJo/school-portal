@@ -21,8 +21,21 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Advisory</th>
-                    {{-- <th>Advisory</th> --}}
+                    <th>Action</th>
                 </thead>
+                <tbody>
+                    @foreach ($teachers as $teacher)
+                        <tr>
+                            <td>{{ $teacher->name }}</td>
+                            <td>{{ $teacher->email }}</td>
+                            <td>NULL</td>
+                            <td>
+                                <button class='btn btn-success'><i class='fas fa-pen'></i></button>
+                                <button class='btn btn-danger'><i class='fas fa-trash'></i></button>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
             </table>
         </div>
     </div> 
