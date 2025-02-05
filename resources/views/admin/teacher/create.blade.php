@@ -15,6 +15,32 @@
         </div>
 
         <div class="card-body">
+            <form action='{{ route('admin.teacher.store') }}' method="POST">
+                @csrf 
+                <div class='form-group'>
+                    <label for='name'>Name</label>
+                    <input class="form-control" name='name' id='name' placeholder="Enter Name">
+                </div>
+
+                <div class="form-group">
+                    <label for='email'>Email Address</label>
+                    <input class="form-control" type='email' name='email' id='email' placeholder="Enter Email">
+                </div>
+
+                <div class="form-group">
+                    <label for='password'>Account Password</label>
+                    <input class="form-control" type='password' name='password' id='password' placeholder="Enter Password">
+                </div>
+
+                <div class="form-group">
+                    <label for='password_confirmation'>Confirm Password</label>
+                    <input class="form-control" type='password' name='password_confirmation' id='password_confirmation' placeholder="">
+                </div>
+
+                <button type='submit' class='btn btn-success'>Submit</button>
+
+
+            </form>
         </div>
     </div> 
 

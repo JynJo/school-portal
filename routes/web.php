@@ -13,5 +13,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('admin')->name('admin.')->middleware(['auth'])->group(function() {
     Route::get('teacher/', [TeacherController::class, 'index'])->name('teacher.index');
+    Route::post('teacher/', [TeacherController::class, 'store'])->name('teacher.store');
     Route::get('teacher/create', [TeacherController::class, 'create'])->name('teacher.create');
 });
