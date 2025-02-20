@@ -3,7 +3,7 @@
 {{-- Customize layout sections --}}
 
 @section('subtitle', 'Welcome')
-@section('content_header_title', 'Create Teacher')
+{{-- @section('content_header_title', 'Add Teacher') --}}
 {{-- Content body: main page content --}}
 
 @section('content_body')
@@ -11,7 +11,8 @@
     <div class="card">
         
         <div class="card-header">
-            <h6>Please fill up the form.</h6>
+            <h3>Add Teacher</h3>
+            {{-- <h6>Please fill up the form.</h6> --}}
         </div>
 
         <div class="card-body">
@@ -21,7 +22,7 @@
                     <label for='name'>Name</label>
                     <input class="form-control" name='name' id='name' placeholder="Enter Name">
                     @error('name')
-                        {{ $message }}     
+                        <p class='text-danger text-sm'>{{ $message }}</p>     
                     @enderror
                 </div>
 
@@ -29,7 +30,7 @@
                     <label for='email'>Email Address</label>
                     <input class="form-control" type='email' name='email' id='email' placeholder="Enter Email">
                     @error('email')
-                        {{ $message }}     
+                        <p class='text-danger text-sm'>{{ $message }}</p>     
                     @enderror
                 </div>
 
@@ -37,7 +38,7 @@
                     <label for='password'>Account Password</label>
                     <input class="form-control" type='password' name='password' id='password' placeholder="Enter Password">
                     @error('password')
-                        {{ $message }}     
+                        <p class='text-danger text-sm'>{{ $message }}</p>     
                     @enderror
                 </div>
 
