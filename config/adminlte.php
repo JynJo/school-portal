@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<div style="text-align: center; margin: 0"><h4>Lourdes College</h4></div>',
+    'logo' => '<div style="text-align: center; margin: 0"><h4></h4></div>',
     'logo_img' => null,
     // 'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_class' => null,

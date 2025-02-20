@@ -28,10 +28,10 @@
                         <tr>
                             <td>{{ $teacher->name }}</td>
                             <td>{{ $teacher->email }}</td>
-                            <td>NULL</td>
+                            <td></td>
                             <td>
-                                <button class='btn btn-success'><i class='fas fa-pen'></i></button>
-                                <button class='btn btn-danger'><i class='fas fa-trash'></i></button>
+                                <button class='btn btn-sm btn-success'><i class='fas fa-pen'></i></button>
+                                <button class='btn btn-sm btn-danger'><i class='fas fa-trash'></i></button>
                             </td>
                         </tr>
                     @endforeach
